@@ -1,1 +1,1 @@
-# Todo app with provider 
+# Todo app with state management support
