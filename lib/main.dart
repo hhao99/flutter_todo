@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/pages/todolist.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -8,20 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Todo',
-      home: Container(
-        alignment: Alignment.center,
-        decoration: BoxDecoration(color: Colors.blue),
-        child:
-          Text(
-              "task reminder app",
-            style: TextStyle(
-              color: Colors.orange,
-              fontSize: 24.0,
-              fontStyle: FontStyle.italic,
-            ),
-          )
-
-      )
-    );
+      home: TodoListPage()
+  );
   }
 }
