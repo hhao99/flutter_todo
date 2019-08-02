@@ -24,12 +24,12 @@ class _TodoListState extends State<TodoListPage> {
             itemCount: todos.length,
             itemBuilder: (context, index) {
               return Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Checkbox(
                   onChanged: (e){
                     setState(() {
                       todos[index].isDone = !todos[index].isDone;
-                      
                     });
                     
                   },      
